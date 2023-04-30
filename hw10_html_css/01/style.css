@@ -42,40 +42,40 @@ body, html{
 }
 .dashboard{
     background: 
-    url(free-icon-font-bell-3917226.png) no-repeat 15px;
+    url(images/free-icon-font-bell-3917226.png) no-repeat 15px;
 }
 .avail_units {
     background: 
-    url(free-icon-font-bank-3914398.png) no-repeat 15px;
+    url(images/free-icon-font-bank-3914398.png) no-repeat 15px;
 }
 .invoices {
     background: 
-    url(free-icon-font-comment-3916603.png) no-repeat 15px;
+    url(images/free-icon-font-comment-3916603.png) no-repeat 15px;
 }
 .projects {
     background: 
-    url(free-icon-font-heart-3916585.png) no-repeat 15px;
+    url(images/free-icon-font-heart-3916585.png) no-repeat 15px;
 }
 .social_media{
     background: 
-    url(free-icon-font-share-3917574.png) no-repeat 15px;    
+    url(images/free-icon-font-share-3917574.png) no-repeat 15px;    
 }
 .integrations{
     background: 
-    url(free-icon-font-star-3916582.png) no-repeat 15px;    
+    url(images/free-icon-font-star-3916582.png) no-repeat 15px;    
 }
 .documentation{
     background: 
-    url(free-icon-font-shopping-bag-3916639.png) no-repeat 15px;    
+    url(images/free-icon-font-shopping-bag-3916639.png) no-repeat 15px;    
 }
 .settings{
     background: 
-    url(free-icon-font-settings-3917058.png) no-repeat 15px;    
+    url(images/free-icon-font-settings-3917058.png) no-repeat 15px;    
     /* margin-top: 130px; */
 }
 .help_center{
     background: 
-    url(free-icon-font-interrogation-3916693.png) no-repeat 15px;    
+    url(images/free-icon-font-interrogation-3916693.png) no-repeat 15px;    
 }
 
 .left_panel li{
@@ -145,19 +145,19 @@ body, html{
   }
 .button_notify{
     background: 
-    url(free-icon-font-bell-3917226.png) center no-repeat;
+    url(images/free-icon-font-bell-3917226.png) center no-repeat;
 }
 .button_search{
     background: 
-    url(free-icon-font-search-3917754.png) center no-repeat;
+    url(images/free-icon-font-search-3917754.png) center no-repeat;
 }
 .button_avatar{
     background: 
-    url(free-icon-font-user-3917711.png) center no-repeat;
+    url(images/free-icon-font-user-3917711.png) center no-repeat;
 }
 .button_options{
     background: 
-    url(free-icon-font-menu-dots-vertical-3917250.png) center no-repeat;
+    url(images/free-icon-font-menu-dots-vertical-3917250.png) center no-repeat;
 }
 .select-css { 
     font-weight: 700; 
@@ -166,7 +166,7 @@ body, html{
     border: 0px solid black;
     padding-right: 20px;
     appearance: none;
-    background-image: url(free-icon-font-caret-down-3916943.png); 
+    background-image: url(images/free-icon-font-caret-down-3916943.png); 
     background-repeat: no-repeat;
     background-position: right .3em top 50%;
 }
@@ -176,7 +176,7 @@ body, html{
     padding: 10px;     
     padding-right: 30px;
     font-weight: 100;
-    background-image: url(free-icon-font-list-3917186.png); 
+    background-image: url(images/free-icon-font-list-3917186.png); 
     background-repeat: no-repeat;
     background-position: right .5em top 50%;
     
@@ -186,7 +186,7 @@ body, html{
     border: 1px solid rgb(128, 128, 128, 0.5);
     padding: 10px;     
     font-weight: 100; 
-    background-image: url(free-icon-font-search-3917754.png); 
+    background-image: url(images/free-icon-font-search-3917754.png); 
     background-repeat: no-repeat;
     background-position: right .5em top 50%;
 }
@@ -211,7 +211,7 @@ body, html{
     border: 1px solid rgb(128, 128, 128, 0.5);
     padding: 10px;  
     padding-right: 20px;   
-    background-image: url(free-icon-font-caret-down-3916943.png); 
+    background-image: url(images/free-icon-font-caret-down-3916943.png); 
     background-repeat: no-repeat;
     background-position: right .2em top 50%;
 }
@@ -236,12 +236,12 @@ body, html{
 }
 .user01{
     background: 
-    url(user01.jpg);
+    url(images/user01.jpg);
 
 }
 .user02{
     background: 
-    url(user02.jpg);
+    url(images/user02.jpg);
 }
 .name_user{
     font-size: 1em;
