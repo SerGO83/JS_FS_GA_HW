@@ -112,11 +112,18 @@ body, html{
 }
 #cards_panel{
     background-color: rgb(236, 236, 236);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
     height: 86%;
     overflow: auto;
     border-bottom-right-radius: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    gap:15px;
 }
 #cards_panel>div{
     flex-grow: 1;
@@ -201,11 +208,11 @@ body, html{
     padding-right: 10px;
 }
 .card{
-    width: 180px;
+    /* width: 180px; */
     height: 250px;
     background-color: white;
     border-radius: 20px;
-    margin: 15px;
+    /* margin: 15px; */
 }
 
 .card_photo{
@@ -310,7 +317,7 @@ body, html{
     }
     #cards_panel {
         height: 100%; 
-        overflow: auto;            
+        overflow: auto; 
 }
 @media screen and (max-width:800px)  {
     #main_panel {
@@ -327,5 +334,14 @@ body, html{
     .top_panel_buttons div{
         margin: 0 2px;
     }
+    #cards_panel {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media screen and (max-width:600px)  {
+    #cards_panel {
+        grid-template-columns: repeat(2, auto);
+    }
+
 }
 }
