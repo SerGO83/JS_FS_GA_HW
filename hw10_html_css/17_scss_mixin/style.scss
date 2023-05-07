@@ -1,1 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body, #wrap, #header_wrapper, #bg_video_wrapper, #header {
+    width: 100%;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+#main_margin{
+    // width: 100%;
+    // margin: 0 auto;
+}
+
+header{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding-top: 15px;
+    // background-color: aqua;
+    .icon{
+        transform: rotate(45deg);
+        background-color: antiquewhite;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        text-align: center;
+        line-height: 30px;
+        }
+    .headers_button{
+        display: flex;
+        gap: 10px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+.main_page{
+    width: 80%;
+    margin: 0 auto;
+    .div_01{
+        display: grid;
+        /* на время отладки*/
+        display: none;
+        /**/
+        grid-template-columns:  65% 35%;
+
+        .div_01_left{
+            width: 90%;
+            
+            .div_01_left_01{
+                color: rgb(42, 133, 252);
+                span{
+                    display: inline-block;
+                    width: 100px;
+                    div {
+                        border-bottom: 2px solid rgb(42, 133, 252);
+                        margin-bottom: 0.2em;
+                }
+            }
+            }
+            .div_01_left_02{
+                font-size: 3em;
+                font-weight: 600;
+                margin: 30px auto;
+            }
+            .div_01_left_03{
+                color: rgb(143, 143, 143);
+                margin: 30px auto;
+            }
+            .div_01_left_04{
+                border-bottom: 1px solid rgb(184, 184, 184);
+                padding-bottom: 15px;
+                button{
+                    color: rgb(42, 133, 252);
+                    padding: 15px;
+                    background-color: white;
+                    border: 2px solid rgb(42, 133, 252);
+                    border-radius: 10px;
+                    font-weight: bold;
+                    &:hover {
+                        color: white;
+                        background-color: rgb(42, 133, 252);
+                    }
+                }
+                #hire_button {
+                    margin-right: 25px;
+                }
+            }
+        }
+        .div_01_foto{
+            background: url(images/jessica_foto.png) no-repeat;
+            height: 393px;
+        }
+    }
+    .div_02{
+       /* на время отладки*/
+       display: none;
+       /**/
+       width: 70%;
+        margin: 150px auto;
+        font-size: 1.8em;
+        text-align: center;
+        font-weight: bold;
+        span{
+            color: cornflowerblue;
+        }
+    }
+    .div_03{
+        display: grid;
+        grid-template-columns:  35% 65%;
+        background-color: aliceblue;
+        .div_03__foto{
+            background: url(images/foto_div03.png) no-repeat;
+            height: 400px;
+        }
+        .div_03_right{
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+        }
+    }
+}
+footer {
+    $icons: "facebook", "network", "twitter", "vk", "whatsapp", "youtube";
+    background-color: aliceblue;
+    .footer_content{
+        padding: 50px 0 50px 0;
+        display: grid;
+        gap: 15px;
+        justify-items: center;
+
+        // background-color: aquamarine;
+        // width: 520px;
+        // margin: 0 auto;
+        h2 {
+            font-weight: 500;
+        }
+        .text_footer{
+            text-align: center;
+            max-width: 514px;
+            font-size: 1em;
+            margin: 0 20px;
+        }
+        .social_media_icons{
+            display: grid;
+            grid-template-columns: repeat(6,40px);
+            justify-items: center;
+            gap: 3px;
+            @mixin icon($icon_name) {
+                .img_#{$icon_name}{
+                    width: 32px;
+                    height: 32px;
+                    background: url("images/#{$icon_name}.png");
+                    background-size: cover;
+                }
+            }
+            @include icon(nth($icons, 1));
+            @include icon(nth($icons, 2));
+            @include icon(nth($icons, 3));
+            @include icon(nth($icons, 4));
+            @include icon(nth($icons, 5));
+            @include icon(nth($icons, 6));
+        }
+    }
+}
