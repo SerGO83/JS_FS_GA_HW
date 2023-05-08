@@ -43,9 +43,9 @@ header a {
   margin: 0 auto;
 }
 .main_page .div_01 {
+  margin-top: 150px;
   display: grid;
   /* на время отладки*/
-  display: none;
   /**/
   grid-template-columns: 65% 35%;
 }
@@ -97,7 +97,6 @@ header a {
 }
 .main_page .div_02 {
   /* на время отладки*/
-  display: none;
   /**/
   width: 70%;
   margin: 150px auto;
@@ -109,9 +108,9 @@ header a {
   color: cornflowerblue;
 }
 .main_page .div_03 {
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: 35% 65%;
-  background-color: aliceblue;
 }
 .main_page .div_03 .div_03__foto {
   background: url(images/foto_div03.png) no-repeat;
@@ -119,7 +118,47 @@ header a {
 }
 .main_page .div_03 .div_03_right {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 45% 45%;
+  column-gap: 15px;
+  row-gap: 35px;
+}
+.main_page .div_03 .div_03_right .chat h4 {
+  margin-bottom: 15px;
+}
+.main_page .div_03 .div_03_right .chat .description {
+  color: rgb(163, 163, 163);
+  font-size: 0.8em;
+}
+.main_page .div_03 .div_03_right .chat a {
+  margin-top: 15px;
+  display: block;
+  text-decoration: none;
+}
+.main_page .div_03 .div_03_right .chat a:after {
+  padding-left: 0.5em;
+  content: "➞";
+}
+
+.div_04 {
+  padding: 100px 0;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+.div_04 .bg_color {
+  width: 80%;
+  margin: 0 auto;
+}
+.div_04 .bg_color div {
+  margin: 10px auto;
+}
+.div_04 .bg_color .brands {
+  display: flex;
+  gap: 50px;
+}
+.div_04 .bg_color .brands img {
+  flex-grow: 1;
+  height: 50px;
+  object-fit: cover;
 }
 
 footer {
