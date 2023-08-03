@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "090d477f-8fbf-47a7-9c65-1d90f353134a",
+		"name": "phone_contacts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14313378"
+	},
+	"item": [
+		{
+			"name": "Запрос всех пользователей",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/allusers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"allusers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос пользователя номер 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Запрос по фамилии",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/Ivanov",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"Ivanov"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Сортировка по фамилии",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/sortfio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sortfio"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
