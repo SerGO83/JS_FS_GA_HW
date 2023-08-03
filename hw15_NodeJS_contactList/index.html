@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+</head>
+
+<body>
+    <p>Контакты</p>
+    <button onclick="requestall()">Получить все контакты</button>
+    <button onclick="request(1)">Контакт 1</button>
+    <button onclick="request(2)">Контакт 2</button>
+    <input id='inputstring' type="text">
+    <button onclick="requestnumber()">Контакт #</button>
+    <br>
+    <button onclick="sortbyfio()">Сортировка по ФИО</button>
+    <button onclick="sortbytown()">Сортировка по адресу</button>
+    <button onclick="sortbyid()">Сортировка по id</button>
+    <br><br>
+    <button onclick="deleteall()">Удалить всех</button>
+</body>
+<script src="request1.js"></script>
+
+</html>
