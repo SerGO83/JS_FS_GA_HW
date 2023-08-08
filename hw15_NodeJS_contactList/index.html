@@ -1,27 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <p>Контакты</p>
-    <button onclick="requestall()">Получить все контакты</button>
-    <button onclick="request(1)">Контакт 1</button>
-    <button onclick="request(2)">Контакт 2</button>
-    <input id='inputstring' type="text">
-    <button onclick="requestnumber()">Контакт #</button>
+    <button onclick="requestall()">Все контакты</button>
+    <button onclick="request(1)">Контакт №1</button>
+    <button onclick="request(2)">Контакт №2</button>
+    <br> 
+    Поиск: <input placeholder="имя или номер" id='inputstring' type="text">
     <br>
-    <button onclick="sortbyfio()">Сортировка по ФИО</button>
-    <button onclick="sortbytown()">Сортировка по адресу</button>
-    <button onclick="sortbyid()">Сортировка по id</button>
-    <br><br>
+    <input placeholder="name" id="user_name" type="text">
+    <input placeholder="tel" id="user_tel" type="text">
+    <input placeholder="address" id="user_addr" type="text">
+    <button onclick="adduser()">Добавить</button>
+    <br>
+    <button onclick="deleteId()">Удалить по ID</button>
+    <input placeholder="id" id="user_id_delete" type="number">
+    <button onclick="deleteName()">Удалить по Name</button>
+    <input placeholder="name" id="user_name_delete" type="text">
+    
+    <br>
     <button onclick="deleteall()">Удалить всех</button>
+    <br>
+    <div id="listt"></div>
+    <br>
+    <div id="pagination">
+        <button onclick="pageLeft()"> < </button>
+        <em id="pageNumber"> # </em>
+        <button onclick="pageRight()"> > </button>
+    </div>
+    <p id="pageCount">Страниц</p>
+    <p id="rowCount">Записей</p>
 </body>
-<script src="request1.js"></script>
+<script src="users.js"> </script>
+<script src="request1.js"> </script>
 
 </html>
